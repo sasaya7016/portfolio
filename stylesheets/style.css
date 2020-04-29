@@ -1,0 +1,74 @@
+/*
+------------------------------
+    基本設定
+------------------------------
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "メイリオ";
+  color: gray;
+  background-color: white;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+/*
+------------------------------
+    ヘッダー
+------------------------------
+*/
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.header_inner {
+  height: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+}
+
+.header_logo {
+}
+
+.nav ul {
+  display: flex;
+  justify-content: right;
+}
+
+.nav ul li {
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+
+/*
+------------------------------
+    メイン
+------------------------------
+*/
+
+.main_wrapper {
+  width: 100%;
+}
+
+.main_contents {
+  width: 100%;
+  height: 500px;
+  background-color: gray;
+}
