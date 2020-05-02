@@ -86,6 +86,7 @@ h1 {
 
 .main_wrapper {
   width: 100%;
+  background-color: #f9f9f9;
   border-top: 1px solid #dcdddf;
 }
 
@@ -97,7 +98,8 @@ h1 {
 }
 
 .main_section {
-  width: 100%;
+  max-width: 100%;
+  min-width: 1200px;
   height: 450px;
   /* background-color: white; */
   position: relative;
@@ -153,6 +155,7 @@ h1 {
 
 .main_text {
   width: 100%;
+  min-width: 1200px;
   height: 350px;
   background-color:#ddd;
   opacity: 0.３;
@@ -172,6 +175,7 @@ h1 {
 
 .main_text-left {
   width: 300px;
+  min-width: 300px;
   height: 300px;
   /* background-color: blue; */
   margin-right: 80pxpx;
@@ -179,6 +183,7 @@ h1 {
 
 .main_text-right {
   width: 450px;
+  min-width: 300pxpx;
   height: 300px;
   /* background-color: red; */
 }
@@ -189,9 +194,9 @@ h1 {
 ------------------------------
 */
 .development {
-  width: 100%;
+  max-width: 100%;
   background-color: #ddd;
-  padding: 30px 30px;
+  padding: 50px 30px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #dcdddf;
@@ -199,7 +204,9 @@ h1 {
 
 .development_left{
   width: 60%;
+  min-width: 700px;
   height: 100%;
+  margin: 20px 40px 20px 30px;
 }
 
 /* left right 共通 */
@@ -214,8 +221,9 @@ h1 {
 }
 
 .data dl{
-  width: 100%;
-  height: 160px;
+  max-width: 700px;
+  min-width: 660px;
+  height: 140px;
   background-color: #fff;
   border:3px solid #ccc;
   margin-top: 20px;
@@ -223,7 +231,7 @@ h1 {
 }
 
 .data dt img{
-  width: 250px; 
+  width: 180px; 
   height: 100%;
   float: left;
   position: relative;
@@ -260,20 +268,21 @@ h1 {
 }
 
 .data dd h4 {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 dd span.create_date{
-  color: #ccc;
-  font-size: 12px;
+  color: blue;
+  font-size: 10px;
 }
 dd span.create_tag{
-  color: #ccc;
-  font-size: 12px;
+  color: red;
+  font-size: 10px;
 }
 
 dd p {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 
@@ -283,12 +292,14 @@ dd p {
 .development_right{
   width: 35%;
   height: 100%;
+  padding: 20px 40px 0 0;
 }
 
 /* .development_title { left 共通} */
 
 .development_pro {
-  width: 100%;
+  max-width: 100%;
+  min-width: 400px;
   height: 100%;
   margin-top: 20px;
 }
