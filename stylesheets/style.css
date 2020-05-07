@@ -237,14 +237,14 @@ h1 {
   position: relative;
   z-index: 2;
   border: 1px solid #ccc;
-  cursor: pointer;
+  /* cursor: pointer;
   filter: grayscale(100%);
-  transition-duration: 0.5s;
+  transition-duration: 0.5s; */
 }
-.data dt img:hover{
+/* .data dt img:hover{
   filter: grayscale(0);
   transition-duration: 0.5s;
-}
+} */
 
 .data span.category_tag {
   font-size: 10px;
