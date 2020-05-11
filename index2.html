@@ -3,6 +3,9 @@
   <title>github-page/sasaya7016</title>
   <link rel="stylesheet" href="stylesheets/style2.css" type="text/css">
   <link rel="stylesheet" href="stylesheets/reset.css" type="text/css">
+  <link rel="stylesheet" href="stylesheets/swiper.css">
+  <script src="js/swiper.js"></script>
+
 </head>
 
 <body>
@@ -18,24 +21,45 @@
           <li nav-lists_github><a href="https://github.com/sasaya7016/portfolio">
             <img src="images/GitHub-Mark-120px-plus.png" alt=" " /></a>
           </li>
-          <!-- <li><img src="images/WordPress-logotype-wmark.png" alt=" " /></li> -->
         </ul>
       </div>
     </div>
   </header>
 
-  <!-- main全て -->
-  <div class="main_wrapper">
-    <!-- <slide>-->
-    <div class="main_contents">
-      <div class="main_section">
-      </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/hashliteral.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/varenta.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/chatspace.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/GitHub-Mark-120px-plus.png" alt=""></div>
     </div>
-
-    <div class="main_text">
-      <div class="main_text-left">
-        
-      </div>
-    </div>
-
+    <div class="swiper-my-pagination"></div>
+  </div>
+  
+<script src="js/swiper.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-my-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + '<img src="https://haniwaman.com/wp-content/uploads/2018/05/swiper-thumbnail' + (index + 1) + '.png" alt="">' + '</span>';
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 4,
+    spaceBetween: 0,
+    initialSlide: 2,
+    loop: true,
+    autoHeight: true,
+    autoplay: {
+    delay: 15000,
+    disableOnInteraction: true
+    },
+  });
+</script>
+  
 </body>
