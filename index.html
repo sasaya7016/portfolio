@@ -4,26 +4,38 @@
     <title>github-page/sasaya7016</title>
     <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
     <link rel="stylesheet" href="stylesheets/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <!-- Libraries CSS Files -->
+        <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
   </head>
   
   <body>  
     <!-- main全て -->
-    <div class="main_wrapper">
+    <div class="main_wrapper", id="mai_wrapper">
       <header>
         <div class="header_inner">
           <div class="header_logo">
             <img src="images/portfolio.logo.png">
         </div>
-        <div class="nav">
-          <ul class="nav-lists">
-            <li nav-lists_twitter><a href="#">
-              <img src="images/Twitter_Social_Icon_Rounded_Square_Color.png" alt=" " /></a>
-            </li>
-            <li nav-lists_github><a href="https://github.com/sasaya7016/portfolio">
-              <img src="images/GitHub-Mark-120px-plus.png" alt=" " /></a>
-            </li>
-          </ul>
-        </div>
+        
+
+        <!-- Nav Menu button -->
+        <nav class="menu" id="theMenu">
+          <div class="menu-wrap">
+            <h1 class="logo"><a href="https://sasaya7016.github.io/portfolio/">LINK</a></h1>
+            <i class="fa fa-arrow-right menu-close"></i>
+            <a href="https://sasaya7016.github.io/portfolio/">Home</a>
+            <a href="#development">APP</a>
+            <a href="#development">Profile</a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="https://github.com/sasaya7016/"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+          
+          </div>
+          <!-- button -->
+          <div id="menuToggle"><i class="fa fa-bars"></i></div>
+        </nav>
       </header>
 
       <div class="main_contents">
@@ -81,7 +93,7 @@
 
 
       
-    <div class="development">
+    <div class="development" , id="development">
       <div class="development_left">
         <div class="development_title">
           <h3>開発アプリ一覧</h3>
@@ -218,3 +230,7 @@
     </footer>  -->
   </body>
 </html>
+
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/main.js"></script>
