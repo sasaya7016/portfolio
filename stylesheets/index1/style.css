@@ -1,0 +1,824 @@
+/*
+------------------------------
+    基本設定
+------------------------------
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway;
+  font-weight: 300;
+  color: #333;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 13px;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+
+
+/*
+------------------------------
+    ヘッダー
+------------------------------
+*/
+
+header {
+  width: 100%;
+  height: 50px;
+  /* background-color: rgba(1, 1, 1, 0.5); */
+  position: fixed;
+  z-index: 10;
+}
+
+
+
+.header_inner {
+  height: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+}
+
+.header_logo {
+  height: 100%;
+  width: 150px;
+}
+
+.header_logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  padding-left: 20px;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: right;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.nav-lists img{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition-duration: 0.5s;
+}
+
+.nav-lists img:hover {
+  filter: grayscale(0);
+  transition-duration: 0.5s;
+}
+
+
+
+
+
+.menu {
+  position: fixed;
+  right: -200px;
+  width: 260px;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  text-align: left;
+}
+
+.menu.menu-open {
+  right: 0;
+}
+
+.menu-wrap {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  background: #1a1a1a;
+  width: 200px;
+  height: 100%
+}
+
+.menu h1.logo a {
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: .15em;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.menu h1.logo a:hover {
+  color: #1abc9c;
+}
+
+.menu img.logo {
+  margin: 20px 0;
+  max-width: 160px;
+}
+
+.menu a {
+  margin-left: 20px;
+  color: gray;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+.menu a:active {
+  color: #fff;
+}
+
+.menu a>i {
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width: 25px;
+  font-size: 14px;
+  line-height: 40px;
+  margin: 25px 2px;
+}
+
+.menu-close {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  color: gray;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  top: 20px;
+  right: 5px;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.menu-close:hover {
+  color: #fff;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.menu, .body-push {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#menuToggle {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 11;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, .25);
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+#menuToggle:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, .2);
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+/*
+------------------------------
+    メイン
+------------------------------
+*/
+.main_wrapper {
+  width: 100%;
+}
+
+.main_contents {
+  width: 100%;
+  background-color: #fff;
+  padding:100px 0 20px 0;
+}
+
+.swiper {
+  height: 55%;
+	width: 80%;
+}
+
+.swiper.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.swiper img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper span {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  color: white;
+}
+
+/*
+------------------------------
+    Slide 1
+------------------------------
+*/
+.top-main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.top-main-left {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+/*  */
+}
+
+.top-main-right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+}
+/*
+------------------------------
+    Slide 2
+------------------------------
+*/
+.profile-main {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: relative;
+}
+
+.profile-left {
+  width: 70%;
+ 
+  height: 100%;
+  background-color: #eee;
+  position: absolute;
+  left: 0;
+  z-index: 4;
+}
+
+.profile-right {
+  width: 30%;
+  height: 100%;
+  background-color: #eee;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+
+.profile-image img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 5;
+}
+
+.profile-center1 {
+  width: 65%;
+  height: 20%;
+  /* background-color: red; */
+  position: absolute;
+  top: 0;
+  left:5%;
+  z-index: 4;
+  line-height: 70px;  /*大体の数値*/
+}
+
+.profile-center2 {
+  width: 65%;
+  height: 60%;
+  /* background-color: blue; */
+  position: absolute;
+  top: 20%;
+  left:5%;
+  z-index: 4;
+}
+
+.profile-center3 {
+  width: 65%;
+  height: 20%;
+  background-color: #eee;
+  position: absolute;
+  top: 80%;
+  left:5%;
+  z-index: 4;
+}
+
+.profile-namelogo img {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+}
+/*
+------------------------------
+    Slide 3
+------------------------------
+*/
+ {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.school-app span {
+  position: absolute;
+  z-index: 5;
+  top: 2%;
+  left: 2%;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+}
+
+.school-app-center {
+  width: 100%;
+  height: 15%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 15px;
+  background-color: #eee;
+  text-align: center;
+}
+.school-app-left {
+  width: 50%;
+  height: 85%;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  z-index: 2;
+}
+
+.hash-literal-1.hash-literal-2..hash-literal-3..hash-literal-4{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 0;
+  z-index: 3;
+} 
+
+.hash-literal-1 img{
+  width: 96%;
+  height: 48%;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 4;
+  border-radius: 1em;
+}
+
+/* .hash-literal-2 img{
+  width: 47%;
+  height: 47%;
+  position: absolute;
+  top: 2;
+  left: 51%;
+  z-index: 4;
+  border-radius: 1em;
+} */
+
+.hash-literal-3 img{
+  width: 47%;
+  height: 47%;
+  position: absolute;
+  top: 51%;
+  left: 2%;
+  z-index: 4;
+  border-radius: 1em;
+}
+.hash-literal-4 img{
+  width: 47%;
+  height: 47%;
+  position: absolute;
+  top: 51%;
+  left: 51%;
+  z-index: 4;
+  border-radius: 1em;
+}
+
+.school-app-right {
+  width: 50%;
+  height: 85%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  z-index: 2;
+  padding: 15px;
+}
+
+.chat-space-1 img{
+  width: 47%;
+  height: 47%;
+  position: absolute;
+  top: 2%;
+  right: 51%;
+  z-index: 4;
+  border-radius: 1em;
+}
+
+.chat-space-2 img{
+  width: 47%;
+  height: 47%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 4;
+  border-radius: 1em;
+}
+
+.chat-space-3 img{
+  width: 47%;
+  height: 47%;
+  position: absolute;
+  top: 51%;
+  right: 51%;
+  z-index: 4;
+  border-radius: 1em;
+}
+
+.chat-space-4 img{
+  width: 47%;
+  height: 47%;
+  position: absolute;
+  top: 51%;
+  right: 2%;
+  z-index: 4;
+  border-radius: 1em;
+}
+
+/*
+------------------------------
+    Slide 4
+------------------------------
+*/
+
+
+
+
+
+/*
+------------------------------
+    footer
+------------------------------
+*/
+
+footer {
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.development {
+  max-width: 100%;
+  background-color: #ddd;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dcdddf;
+}
+
+.development_left{
+  width: 60%;
+  min-width: 700px;
+  height: 100%;
+  margin: 20px 40px 20px 30px;
+}
+
+/* left right 共通 */
+.development_title h3{
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.app-lists ul .date li{
+  width: 100%;
+  height: 100%;
+}
+
+.data dl{
+  max-width: 700px;
+  min-width: 660px;
+  height: 140px;
+  background-color: #fff;
+  border:3px solid #ccc;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.data dt img{
+  width: 180px; 
+  height: 100%;
+  float: left;
+  position: relative;
+  z-index: 2;
+  border: 1px solid #ccc;
+  /* cursor: pointer;
+  filter: grayscale(100%);
+  transition-duration: 0.5s; */
+}
+/* .data dt img:hover{
+  filter: grayscale(0);
+  transition-duration: 0.5s;
+} */
+
+.data span.category_tag {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 0 10px;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  background-color: rgba(246,172,77,0.9);
+  display: inline-block;
+  color: #fff;
+  line-height: 20px;
+  /* position: absolute; */
+  top: 5px;
+  left: 170px;
+  z-index: 3;
+}
+
+.data dd {
+  /* float: right; */
+}
+
+.data dd h4 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+dd span.create_date{
+  color: blue;
+  font-size: 10px;
+}
+dd span.create_tag{
+  color: red;
+  font-size: 10px;
+}
+
+dd p {
+  font-size: 13px;
+}
+
+
+
+
+/* ----- */
+.development_right{
+  width: 35%;
+  height: 100%;
+  padding: 20px 40px 0 0;
+}
+
+/* .development_title { left 共通} */
+
+.development_pro {
+  max-width: 100%;
+  min-width: 400px;
+  height: 100%;
+  margin-top: 20px;
+}
+
+
+/* Contact Form */
+
+#contact-wrap {
+  background: #222;
+  padding: 40px 0;
+  color: #fff;
+}
+
+#contact-wrap h4 {
+  color: #fff;
+  line-height: 26px;
+}
+
+#contact-wrap a {
+  color: #1abc9c;
+}
+.contact-form {
+
+}
+
+.contact-form label {
+   color: #999;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px 12px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  height: auto;
+}
+
+.contact-form .form-send {
+  text-align: center;
+}
+
+.contact-form .form-send button  {
+  background: #1abc9c;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.contact-form .form-send button:hover {
+  background: #19cdaa;
+}
+
+.contact-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact-form .loading {
+  display: none;
+  color: #555;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.contact-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.contact-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.contact-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+/* Copyrights */
+
+#copyrights {
+  background: #2d2c2c;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#copyrights p {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+#copyrights a {
+  color: #19cdaa;
+}
+
+.credits {
+  color: #999;
+}
+
