@@ -42,10 +42,11 @@ header {
   width: 100%;
   height: 10%;
   background-color: white;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
+  overflow: scroll;
 }
 
   
@@ -303,9 +304,9 @@ border-top: 1px solid #dcdddf;
 
 .development_left{
 width: 65%;
-min-width: 700px;
-height: 100%;
-margin: 20px 0px 20px 30px;
+min-width: 750px;
+/* height: 100%; */
+margin: 20px 0px 20px 20px;
 }
 
 /* left right 共通 */
@@ -320,9 +321,9 @@ height: 100%;
 }
 
 .data dl{
-max-width: 650px;
-min-width: 650px;
-height: 140px;
+max-width: 750px;
+min-width: 750px;
+height: 220px;
 background-color: #fff;
 border:3px solid #ccc;
 margin-top: 20px;
@@ -330,7 +331,7 @@ overflow: hidden;
 }
 
 .data dt img{
-width: 180px; 
+width: 280px; 
 height: 100%;
 float: left;
 position: relative;
@@ -360,6 +361,11 @@ line-height: 20px;
 top: 5px;
 left: 170px;
 z-index: 3;
+}
+
+.data span.app-pass {
+  font-weight: 10px;
+  color: green;
 }
 
 .data dd {
@@ -392,8 +398,9 @@ font-size: 13px;
 /* ----- */
 .development_right{
 width: 35%;
+min-width: 400px;
 height: 100%;
-padding: 20px 40px 0 0;
+margin: 20px;
 }
 
 /* .development_title { left 共通} */
@@ -401,7 +408,7 @@ padding: 20px 40px 0 0;
 .development_pro {
 width: 100%;
 height: 100%;
-margin-top: 40px;
+margin-top: 20px;
 padding: 10px;
 background-color: #fff;
 border:3px solid #ccc;
