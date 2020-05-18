@@ -2,7 +2,6 @@
 基本設定
 ------------------------------ */
 
-
 * {
 box-sizing: border-box;
 }
@@ -388,6 +387,7 @@ filter: grayscale(100%);
 transition-duration: 0.5s;
 }
 
+
 .my-image:hover img {
 filter: grayscale(0);
 transform: scale(1.2);
@@ -423,7 +423,8 @@ right: 30%;
 ------------------------------
 */
 .development {
-max-width: 100%;
+width: 100%;
+min-width: 100%;
 background-color: #ddd;
 padding: 50px 5px 0 10px;
 display: flex;
@@ -530,6 +531,8 @@ width: 35%;
 min-width: 400px;
 height: 100%;
 margin: 20px;
+position: absolute;
+left:750px;
 }
 
 /* .development_title { left 共通} */
@@ -541,6 +544,7 @@ margin-top: 20px;
 padding: 10px;
 background-color: #fff;
 border:3px solid #ccc;
+position: absolute;
 }
 
 .development_pro h2 {
