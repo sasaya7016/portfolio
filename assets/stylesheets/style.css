@@ -1,0 +1,520 @@
+/* ------------------------------ 
+基本設定
+------------------------------ */
+
+* {
+  box-sizing: border-box;
+  }
+  
+  body {
+  font-family: "メイリオ";
+  color: white;
+  background-color: white;
+  }
+
+ h1,h2,h3,h4,h5,h6 {
+   color: white;
+ }
+  
+  a {
+  color: white;
+  text-decoration: none;
+  }
+  
+  
+  /*
+  ------------------------------
+  ヘッダー
+  ------------------------------
+  */
+  
+header {
+  height: 100vh;
+  width: 250px;
+  background-color: black;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: scroll;
+}
+
+.portfolio-title {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+}
+    
+.navbar {
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top:50px;
+  left: 0;
+  z-index: 1;
+}
+
+.navigation{
+  width: 100%;
+}
+
+.profile-section{
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+.profile-section  img {
+  width: 150px;
+  height: 200px;
+}
+
+.profile-message {
+  font-size: 5px;
+  margin: 20px 0;
+  margin: 10px auto;
+}
+
+.profile-message > p {
+  display: inline-block;
+  text-align: left;
+  font-weight: 100px ;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+hr {
+  margin: 20px;
+}
+
+.profile-next {
+  width: 100%;
+  position: absolute;
+  top: 300px;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+.list-inline-item{
+  display: inline-block;
+  text-align: left;
+}
+
+.artical {
+  display: inline-block;
+  text-align: center;
+}
+
+.artical-text {
+  margin: 10px 0;
+}
+
+.profile-next{
+  padding: 0 20px;
+}
+
+.profile-next  p{
+  text-align: left;
+  font-size: 7px;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+/* Swiper START */
+.swiper-container {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  top: 520px;
+  left: 5px;
+}
+
+/* メイン表示部分 */
+.swiper-wrapper {
+  width: 200px;
+  height: 150px;;
+}
+
+.swiper.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.swiper img{
+  width: 70px;
+  height: 50px;
+}
+
+.swiper span {
+
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  color: white;
+}
+  
+.back-pick {
+  background-color: white;
+}
+  
+  
+/*
+------------------------------
+main全て
+------------------------------
+*/
+  
+.main_wrapper {
+  width: calc(100vw - 250px);
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  z-index: 0;
+  overflow: scroll;
+}
+
+  
+.main_contents {
+  width: 100%;
+  height: 600px;
+  background-color: gray;
+}
+
+
+  
+  
+  
+  /*
+  ------------------------------
+  2nd フューズ
+  ------------------------------
+  */
+  .development {
+  width: 100%;
+  background-color: gray;
+  padding: 50px 5px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dcdddf;
+  }
+  
+  .development_left{
+  width: 65%;
+  margin: 20px 0px 20px 20px;
+  }
+  
+  /* left right 共通 */
+  .development_title h3{
+  font-size: 20px;
+  line-height: 40px;
+  }
+  
+  .app-lists ul .date li{
+  width: 100%;
+  height: 100%;
+  }
+  
+  .data dl{
+  max-width: 700px;
+  min-width: 700px;
+  height: 200px;
+  background-color: #fff;
+  border:3px solid #ccc;
+  margin-top: 20px;
+  overflow: hidden;
+  }
+  
+  .data dt img{
+  width: 280px; 
+  height: 100%;
+  float: left;
+  /* position: relative;
+  z-index: 2; */
+  border: 1px solid #ccc;
+  /* cursor: pointer;
+  filter: grayscale(100%);
+  transition-duration: 0.5s; */
+  }
+  /* .data dt img:hover{
+  filter: grayscale(0);
+  transition-duration: 0.5s;
+  } */
+  
+  .data span.category_tag {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 0 10px;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  background-color: rgba(246,172,77,0.9);
+  display: inline-block;
+  color: #fff;
+  line-height: 20px;
+  /* position: absolute; */
+  /* top: 5px;
+  left: 170px;
+  z-index: 3; */
+  }
+  
+  .data span.app-pass {
+    font-weight: 10px;
+    color: green;
+  }
+  
+  .data dd {
+  /* float: right; */
+  }
+  
+  .data dd h4 {
+  font-size: 17px;
+  font-weight: bold;
+  }
+  
+  dd span.create_date{
+  color: blue;
+  font-size: 10px;
+  }
+  dd span.create_tag{
+  color: red;
+  font-size: 10px;
+  }
+  
+  dd p {
+  font-size: 13px;
+  }
+  
+  
+  
+  
+  
+  
+  /* ----- */
+  /* .development_right{
+  width: 35%;
+  margin: 20px;
+  } */
+  
+  /* .development_title { left 共通} */
+/*   
+  .development_pro {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border:3px solid #ccc;
+  position: absolute;
+  }
+  
+  .development_pro h2 {
+    
+  }
+  
+  .development_pro p {
+    font-size: 10px;
+  }
+  
+   */
+
+
+
+
+
+
+  footer {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    border-top: 1px solid #dcdddf;
+    }
+    
+    .footer_inner {
+    width: 100%;
+    height: 100%;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .footer_logo {
+    width: 50px;
+    height: 50px;
+    }
+    
+    .footer_logo img{
+    height: 30px;
+    }
+    
+    .footer_mail img{
+    height: 30px;
+    }
+  
+
+
+   .menu {
+    position: fixed;
+    right: -200px;
+    width: 260px;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: left;
+  }
+  
+  .menu.menu-open {
+    right: 0;
+  }
+  
+  .menu-wrap {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    background: #1a1a1a;
+    width: 200px;
+    height: 100%
+  }
+  
+  .menu h1.logo a {
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .15em;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .menu h1.logo a:hover {
+    color: #1abc9c;
+  }
+  
+  .menu img.logo {
+    margin: 20px 0;
+    max-width: 160px;
+  }
+  
+  .menu a {
+    margin-left: 20px;
+    color: gray;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  .menu a:hover {
+    color: #fff;
+  }
+  
+  .menu a:active {
+    color: #fff;
+  }
+  
+  .menu a>i {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 25px;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 25px 2px;
+  }
+  
+  .menu-close {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    color: gray;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 25px;
+    right: 5px;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+  }
+  
+  .menu-close:hover {
+    color: #fff;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+  }
+  
+  .menu, .body-push {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  #menuToggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 11;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, .25);
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+  }
+  
+  #menuToggle:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, .2);
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+  }
+  
+
+  .fa-bars {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+  }
