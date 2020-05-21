@@ -87,6 +87,7 @@ header {
   display: inline-block;
   text-align: left;
   font-weight: 100px ;
+  font-size: 10px;
 }
 
 .social-list {
@@ -140,6 +141,7 @@ hr.style1 {
   text-align: left;
   font-size: 7px;
   margin-top: 5px;
+  font-size: 10px;
 }
 
 /* ----------Swiper ----------*/
