@@ -5,19 +5,16 @@
     <link rel="stylesheet" href="assets/stylesheets/style.css" type="text/css">
     <link rel="stylesheet" href="assets/stylesheets/reset.css" type="text/css">
     <link rel="stylesheet" href="assets/stylesheets/swiper.css" type="text/css">
- 
+    <!-- fontawsome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-
-    <link href="asetts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  
   </head>
   
   <body>  
+
     <!-- header -->
     <header class="header sidebar">
       <h1 class="portfolio-title"><a href="index.html">Portfolio</a></h1>
       <nav class="navbar">
-
         <div class="navigation" >
           <div class="profile-section">
             <img class="profile-image" src="assets/images/portfolio.jpeg" >
@@ -28,16 +25,18 @@
               </p>
             </div>
 
+            <!-- SNS LOGO -->
             <ul class="social-list ">
               <li class="list-inline-item"><a href="https://twitter.com/mr_naopy"><i class="fab fa-twitter fa-fw"></i></a></li>
-              <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li> -->
+              <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
               <li class="list-inline-item"><a href="https://github.com/sasaya7016"><i class="fab fa-github-alt fa-fw"></i></a></li>
-              <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li> -->
+              <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
             </ul><!--//social-list-->
-            <hr> 
+            <hr class="style1">
           </div><!--//profile-section-->
           
+          <!-- About -->
           <div class="profile-next">
             <div class="artical">
               <div class="artical-text" >
@@ -53,21 +52,16 @@
                   <br><br><br><br>
                 </p>
               </div>
-      
               <div class="artical-text" >
                 <i class="fas fa-user"></i>Programing</li>
                 <p>▶︎現在学んでいる言語です。
                 </p>
               </div>
-            </div>
-          </div>
+            </div> <!--/artical-->
+          </div> <!--/profile-next-->
 
-
-
-          <!-- Swiper START -->
+          <!-- Swiper -->
           <div class="swiper-container swiper">
-
-            <!-- メイン表示部分 -->
             <div class="swiper-wrapper">
               <!-- 各スライド -->
               <div class="swiper-slide">
@@ -88,12 +82,6 @@
               <div class="swiper-slide">
                 <img src="assets/images/program-logo/Rails.png">
               </div>
-              <!-- <div class="swiper-slide back-pick">
-                <img src="assets/images/program-logo/haml.png">
-              </div>
-              <div class="swiper-slide back-pick">
-                <img src="assets/images/program-logo/scss.png">
-              </div> -->
               <div class="swiper-slide">
                 <img src="assets/images/program-logo/github.png">
               </div>
@@ -101,157 +89,186 @@
                 <img src="assets/images/program-logo/mySQL.png">
               </div>
             </div>
-          
-
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
             <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </nav>
+          </div> <!-- /swiper-container swiper-->
+        </div> <!--/navigation-->
+      </nav> <!--/navbar-->
     </header>
 
     <!-- main -->
-    <div class="main_wrapper">
-      <div class="main_contents"></div>
+    <div class="main_wrapper"> 
+      <!--pickup-->
+      <div class="main-board">
+        PICK UP
+        <div class="main-board-contents">
+          <!-- 各image -->
+          <div class="main-board-image">
+            <img src="assets/images/program-logo/php.png">
+          </div>
+          <div class="main-board-image">
+            <img src="assets/images/program-logo/Laravel.png">
+          </div>
+          <div class="main-board-image">
+            <img src="assets/images/program-logo/php.png">
+          </div>
+          <div class="main-board-image">
+            <img src="assets/images/program-logo/Laravel.png">
+          </div>
+        </div>
+        <hr class="style2">
+      </div> <!--/main-board-->
         
+      <!--メインタブ-->
+      <div class="tab-container">
+        <ul class="tab-menu">
+          <li><a href="#" class="active" data-id="service">App</a></li>
+          <li><a href="#" data-id="about">Profile</a></li>
+          <li><a href="#" data-id="contact">contact</a></li>
+        </ul>
+        <!--※タブ追加の際  li data-id=section id 合わして追記-->
 
+        <!----------タブ①---------->
+        <section class="tab-content active" id="service">
+          <div class="development">
+            <div class="development_title">
+              <h3>開発アプリ一覧</h3>
+            </div> 
+            <!-- アプリ一覧ページ (li data 複製) -->
+            <ul class="app-lists">
+              <!-- 個人アプリ① -->
+              <li class="data">
+                <dl>
+                  <dt>
+                    <img src="assets/images/varenta.jpg" alt="">
+                    <span class="category_tag">美容院HP</span>
+                  </dt>
+                  <dd>
+                    <h4><a href="#">VARENTA</a></h4>
+                    <span class="create_date">作成中</span>
+                    <span class="create_tag"> Ruby on rails</span>
+                    <p>IP：<a href="#">000.000.00.00</a>
+                      <br>user：000,&nbsp;pass：000
+                      <br>美容院HP
+                      <br>主な機能：ユーザー登録、ログイン、
+                      <br>予約フォーマット
+                  </dd>
+                </dl>
+              </li>
 
-
-      
-
-  
-
-
-
-      <div class="development"  id="development">
-        <div class="development_left">
-          <div class="development_title">
-            <h3>開発アプリ一覧</h3>
-          </div> 
-          <!-- アプリ一覧ページ (li data 複製) -->
-          <ul class="app-lists">
-            <!-- 個人アプリ① -->
-            <li class="data">
-              <dl>
-                <dt>
-                  <img src="assets/images/varenta.jpg" alt="">
-                  <span class="category_tag">美容院HP</span>
-                </dt>
-                <dd>
-                  <h4><a href="#">VARENTA</a></h4>
-                  <span class="create_date">作成中</span>
-                  <span class="create_tag"> Ruby on rails</span>
-                  <p>IP：<a href="#">000.000.00.00</a>
+                <!-- 個人アプリ②-->
+              <li class="data">
+                <dl>
+                  <dt>
+                    <img src="assets/images/GitHub-Mark-120px-plus.png" alt="">
+                    <span class="category_tag">？？？？</span>
+                  </dt>
+                  <dd>
+                    <h4><a href="#">作成中</a></h4>
+                    <span class="create_date">作成中</span>
+                    <span class="create_tag"> PHP</span>
+                    <p>IP：<a href="#">000.000.00.00</a>
                     <br>user：000,&nbsp;pass：000
                     <br>美容院HP
                     <br>主な機能：ユーザー登録、ログイン、
                     <br>予約フォーマット
-                </dd>
-              </dl>
-            </li>
-              <!-- 個人アプリ②-->
-            <li class="data">
-              <dl>
-                <dt>
-                  <img src="assets/images/GitHub-Mark-120px-plus.png" alt="">
-                  <span class="category_tag">？？？？</span>
-                </dt>
-                <dd>
-                  <h4><a href="#">作成中</a></h4>
-                  <span class="create_date">作成中</span>
-                  <span class="create_tag"> PHP</span>
-                  <p>IP：<a href="#">000.000.00.00</a>
-                  <br>user：000,&nbsp;pass：000
-                  <br>美容院HP
-                  <br>主な機能：ユーザー登録、ログイン、
-                  <br>予約フォーマット
-                </dd>
-              </dl>
-            </li>
-    
-            <!-- TECHCAMP Team開発 -->
-            <li class="data">
-              <dl>
-                <dt>
-                  <a href="http://www.hash-literal.com"><img src="assets/images/hashliteral.jpg" alt=""></a>
-                  <span class="category_tag">フリマアプリ</span>
-                </dt>
-                <dd>
-                  <h4><a href="http://www.hash-literal.com">Hash Literal</a></h4>
-                  <span class="create_date">2020/04/24</span>
-                  <span class="create_tag"> Ruby on rails</span>
-                  <p>IP：<a href="http://www.hash-literal.com">http://www.hash-literal.com</a>
-                    <br>
-                    <span class="app-pass"> user：teamd72,&nbsp;pass：teamd</span>
-                    <br>プログラミングスクールの課題でチームで開発致しましたアプリでございます。
-                    <br>主な機能：ユーザー登録、ログイン、ログアウト
-                    <br> APIを使った認証ログイン登録、ユーザー登録後に商品の出品、購入、削除
-                    <br>お気に入り、パンクズ、商品に対するコメント マイページ機能から購入履歴の確認、
-                    <br>ユーザー登録情報の変更、退会 商品の検索、商品購入の際クレジットカードを登録させて購入
-                    <br><br>
-                    <a href="https://github.com/sasaya7016/freemarket_sample_72d">Github:Hash-literal(click)</a>
-                  </p>
-                </dd>
-              </dl>
-            </li>
+                  </dd>
+                </dl>
+              </li>
       
-            <li class="data">
-              <dl>
-                <dt>
-                  <a href="http://18.180.142.209/"><img src="assets/images/chatspace.png" alt=""></a>
-                  <span class="category_tag">チャットアプリ</span>
-                </dt>
-                <dd>
-                  <h4><a href="http://18.180.142.209/">Chat-Space（チャットアプリケーション）</a></h4>
-                  <span class="create_date">2020/03/20</span>
-                  <span class="create_tag"> Ruby on rails</span>
-                  <p>IP：<a href="http://18.180.142.209/">http://18.180.142.209</a>
-                    <br>user：&nbsp;&nbsp;&nbsp;,&nbsp;pass：&nbsp;&nbsp;&nbsp;  -->
-                    <br>プログラミングスクールの課題で個人開発致しました。
-                    <br>グループチャットのアプリです。
-                    <br>主な機能：ユーザー登録、ログイン、ログアウト、グループ作成
-                    <br>非同期通信によるメッセージの自動更新
-                    <br><br>
-                    <a href="https://github.com/sasaya7016/chat-space">Git hub:chat-space(click)</a>
-                  </p>
-                </dd>
-              </dl>
-            </li>
-          </ul>
-        </div>
-              
-        <!-- <div class="development_right">
-          <div class="development_title">
-            <h3>Profile</h3>
-          </div>
-          <div class="development_pro">
-            <h2>経歴</h2><br>
-            <p>2010年&nbsp;&nbsp;愛知学院大学 法学部 卒業<br>
-              2012年&nbsp;&nbsp;一部上場企業のホテル運営会社に勤務(勤務年数:7年)<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・顧客対応（受付業務,顧客管理,調理）<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・店舗責任者3年（運営管理、顧客管理、経費管理、従業員教育）<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;マネジメント経験3年（社員15名、アルバイト40名）<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・本部企画業務（2年）<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・企画開発（新規商品、社内ツール）<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・品質管理<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・オペレーション管理（社内ツールの整備、システム管理）<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・マーケティング業務（競合他社分析、顧客分析）<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・新規店舗立ち上げ<br>
-              2019年&nbsp;&nbsp;ホテル運指会社退職(3月)<br><br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;住宅設備商社に転職(4月)<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・営業 (担当件数：法人25件,個人10件)<br>
-              2020年&nbsp;&nbsp;住宅設備商社 退職(1月)<br><br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;プログラミングスクール TECH CAMP入校(2/17〜)
-              <br>
-            </p>
-          </div>
-        </div> -->
-      </div>
+              <!-- TECHCAMP Team開発 -->
+              <li class="data">
+                <dl>
+                  <dt>
+                    <a href="http://www.hash-literal.com"><img src="assets/images/hashliteral.jpg" alt=""></a>
+                    <span class="category_tag">フリマアプリ</span>
+                  </dt>
+                  <dd>
+                    <h4><a href="http://www.hash-literal.com">Hash Literal</a></h4>
+                    <span class="create_date">2020/04/24</span>
+                    <span class="create_tag"> Ruby on rails</span>
+                    <p>IP：<a href="http://www.hash-literal.com">http://www.hash-literal.com</a>
+                      <br>
+                      <span class="app-pass"> user：teamd72,&nbsp;pass：teamd</span>
+                      <br>プログラミングスクールの課題でチームで開発致しましたアプリでございます。
+                      <br>主な機能：ユーザー登録、ログイン、ログアウト
+                      <br> APIを使った認証ログイン登録、ユーザー登録後に商品の出品、購入、削除
+                      <br>お気に入り、パンクズ、商品に対するコメント マイページ機能から購入履歴の確認、
+                      <br>ユーザー登録情報の変更、退会 商品の検索、商品購入の際クレジットカードを登録させて購入
+                      <br><br>
+                      <a href="https://github.com/sasaya7016/freemarket_sample_72d">Github:Hash-literal(click)</a>
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+
+              <!-- TECHCAMP 個人開発 -->
+              <li class="data">
+                <dl>
+                  <dt>
+                    <a href="http://18.180.142.209/"><img src="assets/images/chatspace.png" alt=""></a>
+                    <span class="category_tag">チャットアプリ</span>
+                  </dt>
+                  <dd>
+                    <h4><a href="http://18.180.142.209/">Chat-Space（チャットアプリケーション）</a></h4>
+                    <span class="create_date">2020/03/20</span>
+                    <span class="create_tag"> Ruby on rails</span>
+                    <p>IP：<a href="http://18.180.142.209/">http://18.180.142.209</a>
+                      <br>user：&nbsp;&nbsp;&nbsp;,&nbsp;pass：&nbsp;&nbsp;&nbsp;  -->
+                      <br>プログラミングスクールの課題で個人開発致しました。
+                      <br>グループチャットのアプリです。
+                      <br>主な機能：ユーザー登録、ログイン、ログアウト、グループ作成
+                      <br>非同期通信によるメッセージの自動更新
+                      <br><br>
+                      <a href="https://github.com/sasaya7016/chat-space">Git hub:chat-space(click)</a>
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+            </ul> <!--/app-lists-->
+          </div> <!--/development-->
+        </section> <!--タブ①終わり-->
+        
+        <!----------タブ②---------->
+        <section class="tab-content" id="about">
+          <div class="tab-profile">
+            <div class="tab-profile-title">
+              <h3>Profile</h3>
+            </div>
+            <div class="tab-profile-all">
+              <h2>経歴</h2><br>
+              <p>2010年&nbsp;&nbsp;愛知学院大学 法学部 卒業<br>
+                2012年&nbsp;&nbsp;一部上場企業のホテル運営会社に勤務(勤務年数:7年)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・顧客対応（受付業務,顧客管理,調理）<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・店舗責任者3年（運営管理、顧客管理、経費管理、従業員教育）<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;マネジメント経験3年（社員15名、アルバイト40名）<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・本部企画業務（2年）<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・企画開発（新規商品、社内ツール）<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・品質管理<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・オペレーション管理（社内ツールの整備、システム管理）<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・マーケティング業務（競合他社分析、顧客分析）<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・新規店舗立ち上げ<br>
+                2019年&nbsp;&nbsp;ホテル運指会社退職(3月)<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;住宅設備商社に転職(4月)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・営業 (担当件数：法人25件,個人10件)<br>
+                2020年&nbsp;&nbsp;住宅設備商社 退職(1月)<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;プログラミングスクール TECH CAMP入校(2/17〜)
+                <br>
+              </p>
+            </div>
+          </div> 
+        </section>  <!--タブ②終わり-->
+
+        <!----------タブ③---------->
+        <section class="tab-content" id="contact">
+          contact
+        </section>
+      </div> <!--/tab-container-->
+
+
       <footer>
         <div class="footer_inner">
           <div class="footer_logo">
-            <img src="images/gmail.png">
+            <img src="assets/images/gmail.png">
             <!-- <p>...@gmail.com</p> -->
           </div>
           <div class="footer_mail">
@@ -261,59 +278,26 @@
       </footer> 
 
 
-
-
-
-
-
-      <!-- Nav Menu button -->
+      <!-- Menu button -->
       <nav class="menu" id="theMenu">
         <div class="menu-wrap">
-          <h1 class="logo"><a href="https://sasaya7016.github.io/portfolio/">Page Link</a></h1>
+          <h1 class="logo"><a href="https://sasaya7016.github.io/portfolio/">Page Link(作成中)</a></h1>
           <i class="fa fa-arrow-right menu-close"></i>
           <a href="https://sasaya7016.github.io/portfolio/">Home</a>
-          <a href="#development">APP</a>
-          <a href="#development">Profile</a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="https://github.com/sasaya7016/"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fa fa-envelope"></i></a>
-        
+          <a href="#development">Ruby on Rails</a>
+          <a href="#development">Laravel</a>
         </div>
         <!-- button -->
         <div id="menuToggle"><i class="fa fa-bars"></i></div>
       </nav>
     </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/slide.js"></script>
+    <script src="assets/js/tab.js"></script>
   </body>
 </html>
-
-<!-- JavaScript Libraries -->
-<script src="assets/jquery/jquery.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/swiper.js"></script>
-
-<script>
-var mySwiper = new Swiper('.swiper-container', {
-  freeMode: true,
-  // spaceBetween: 10,
-  slidesPerView: 3,
-  autoHeight: true,
-  loop:true,
-  
-  autoplay: {
-		delay: 3000,
-		stopOnLastSlide: false,
-		disableOnInteraction: false,
-		reverseDirection: false
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		type: 'bullets',
-		clickable: true
-	}
-});
-
-</script>
