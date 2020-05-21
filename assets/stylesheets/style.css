@@ -1,37 +1,38 @@
-/* ------------------------------ 
+/* 
+------------------------------ 
 基本設定
------------------------------- */
+------------------------------ 
+*/
 
 * {
   box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
   font-family: "メイリオ";
   color: white;
   background-color: white;
-  }
+}
 
- h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,p{
    color: white;
- }
+}
   
-  a {
+a {
   color: white;
   text-decoration: none;
-  }
-  
-  
-  /*
-  ------------------------------
-  ヘッダー
-  ------------------------------
-  */
+}
+
+/*
+------------------------------
+ヘッダー
+------------------------------
+*/
   
 header {
   height: 100vh;
   width: 250px;
-  background-color: black;
+  background-color: #151e29;
   color: #fff;
   position: fixed;
   left: 0;
@@ -51,7 +52,6 @@ header {
     
 .navbar {
   width: 100%;
-  background-color: black;
   position: absolute;
   top:50px;
   left: 0;
@@ -64,7 +64,6 @@ header {
 
 .profile-section{
   width: 100%;
-  background-color: black;
   position: absolute;
   top: 0;
   left: 0;
@@ -84,7 +83,7 @@ header {
   margin: 10px auto;
 }
 
-.profile-message > p {
+.profile-message p {
   display: inline-block;
   text-align: left;
   font-weight: 100px ;
@@ -96,7 +95,16 @@ header {
   margin: 20px;
 }
 
-hr {
+.social-list a{
+  background-color: #5BC3D5;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  padding: 2px;
+  margin: 0 4px;
+}
+
+hr.style1 {
   margin: 20px;
 }
 
@@ -134,12 +142,7 @@ hr {
   margin-top: 5px;
 }
 
-
-
-
-
-
-/* Swiper START */
+/* ----------Swiper ----------*/
 .swiper-container {
   height: 300px;
   width: 100%;
@@ -176,7 +179,6 @@ hr {
   background-color: white;
 }
   
-  
 /*
 ------------------------------
 main全て
@@ -186,63 +188,124 @@ main全て
 .main_wrapper {
   width: calc(100vw - 250px);
   height: 100vh;
-  background-color: white;
   position: fixed;
   top: 0;
   left: 250px;
   z-index: 0;
   overflow: scroll;
+  background-color: #111821;
+  min-width: 960px ;
 }
 
-  
-.main_contents {
+/* ----------pickup ----------*/
+.main-board {
   width: 100%;
+  margin-top: 30px;
 }
 
-
-  
-  
-  
-  /*
-  ------------------------------
-  2nd フューズ
-  ------------------------------
-  */
-  .development {
+hr.style2 {
+  border-top: 1px #5BC3D5;
   width: 100%;
-  background-color: white;
-  padding: 20px 10px;
-  border-top: 1px solid #dcdddf;
+  text-align: center;
+}
+
+.main-board-contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.main-board-image {
+  width: 200px;
+  height: 100px;
+  margin: 0 20px;
+  background-color: #151e29;
+}
+
+.main-board-image img{
+  width: 200px;
+  height: 100px;
+}
+
+/*
+------------------------------
+tab
+------------------------------
+*/
+.tab-container {
+  width: 100%;
+  min-width: 960px ;
+  background-color: #111821;
+  padding: 20px 50px;
   color: black;
-  }
-
-  .development h3 {
-    color: black;
-  }
-
- 
+}
   
-  .development_left{
+.tab-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+  
+.tab-menu li a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px 4px 0 0;
+} 
+
+.tab-menu li a.active {
+  background-color: #151e29;
+  color: #fff;
+}
+
+.tab-menu li a:not(.active):hover{
+  opacity: 0.5;
+  transition: opacity 0.4s;
+}
+
+.tab-content.active {
+  background-color: #151e29;
+  color: #fff;
+  min-height: 150px;
+  padding: 12px;
+  display: block;
+}
+
+.tab-content {
+  display: none;
+}
+
+/*
+------------------------------
+タブ①
+------------------------------
+*/
+
+.development{
   width: 100%;
-  }
-  
-  /* left right 共通 */
-  .development_title h3{
+  background-color: #151e29;
+}
+
+.development_title h3{
   font-size: 20px;
   line-height: 40px;
   text-align: center;
-  }
-  
-  .app-lists ul .date li{
+}
+
+.app-lists ul .date li{
   width: 100%;
   height: 100%;
-  }
+}
 
-  li.data {
-    margin: 40px;
-  }
-  
-  .data dl{
+li.data {
+  margin: 40px;
+}
+
+.data dl{
   max-width: 700px;
   min-width: 700px;
   height: 160px;
@@ -252,24 +315,15 @@ main全て
   overflow: hidden;
   margin: 0 auto;
 }
-  
-  .data dt img{
+
+.data dt img{
   width: 260px; 
   height: 100%;
   float: left;
-  /* position: relative;
-  z-index: 2; */
   border: 1px solid #ccc;
-  /* cursor: pointer;
-  filter: grayscale(100%);
-  transition-duration: 0.5s; */
-  }
-  /* .data dt img:hover{
-  filter: grayscale(0);
-  transition-duration: 0.5s;
-  } */
-  
-  .data span.category_tag {
+}
+
+.data span.category_tag {
   font-size: 10px;
   font-weight: bold;
   padding: 0 10px;
@@ -280,249 +334,258 @@ main全て
   display: inline-block;
   color: #fff;
   line-height: 20px;
-  /* position: absolute; */
-  /* top: 5px;
-  left: 170px;
-  z-index: 3; */
-  }
-  
-  .data span.app-pass {
-    font-weight: 10px;
-    color: green;
-  }
-  
-  .data dd {
+}
+
+.data span.app-pass {
+  font-weight: 10px;
+  color: green;
+}
+
+.data dd {
   /* float: right; */
-  }
-  
-  .data dd h4 {
+}
+
+.data dd h4 {
   font-size: 17px;
   font-weight: bold;
-  }
-  
-  dd span.create_date{
+}
+
+dd span.create_date{
   color: blue;
   font-size: 10px;
-  }
-  dd span.create_tag{
+}
+dd span.create_tag{
   color: red;
   font-size: 10px;
-  }
-  
-  dd p {
+}
+
+dd p {
   font-size: 13px;
-  }
+}
+
   
+/*
+------------------------------
+タブ②
+------------------------------
+*/ 
   
-  
-  
-  
-  
-  /* ----- */
-  /* .development_right{
-  width: 35%;
-  margin: 20px;
-  } */
-  
-  /* .development_title { left 共通} */
-/*   
-  .development_pro {
+.tab-profile{
   width: 100%;
-  height: 100%;
+  background-color: #151e29;
+}
+
+.tab-profile-title h3{
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.tab-profile-all {
+  width: 100%;
   margin-top: 20px;
   padding: 10px;
-  background-color: #fff;
-  border:3px solid #ccc;
+}
+  
+.tab-profile-all p {
+  font-size: 10px;
+}
+
+/*
+------------------------------
+タブ③
+------------------------------
+*/ 
+
+
+
+
+
+
+/*
+------------------------------
+footer
+------------------------------
+*/ 
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #111821;
+  border-top: 1px solid #dcdddf;
+}
+  
+.footer_inner {
+  width: 100%;
+  height: 100%;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.footer_logo {
+  width: 50px;
+  height: 50px;
+}
+  
+.footer_logo img{
+  height: 30px;
+}
+  
+.footer_mail img{
+  height: 30px;
+}
+
+
+/*
+------------------------------
+btn
+------------------------------
+*/ 
+
+.menu {
+  position: fixed;
+  right: -200px;
+  width: 260px;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  text-align: left;
+}
+
+.menu.menu-open {
+  right: 0;
+}
+
+.menu-wrap {
   position: absolute;
-  }
-  
-  .development_pro h2 {
-    
-  }
-  
-  .development_pro p {
-    font-size: 10px;
-  }
-  
-   */
+  top: 0;
+  left: 60px;
+  background: #1a1a1a;
+  width: 200px;
+  height: 100%
+}
+
+.menu h1.logo a {
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: .15em;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.menu h1.logo a:hover {
+  color: #5BC3D5;
+}
+
+.menu img.logo {
+  margin: 20px 0;
+  max-width: 160px;
+}
+
+.menu a {
+  margin-left: 20px;
+  color: gray;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+.menu a:active {
+  color: #fff;
+}
+
+.menu a>i {
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width: 25px;
+  font-size: 14px;
+  line-height: 40px;
+  margin: 25px 2px;
+}
+
+.menu-close {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  color: gray;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  top: 25px;
+  right: 5px;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.menu-close:hover {
+  color: #fff;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.menu, .body-push {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#menuToggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 11;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, .25);
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+#menuToggle:hover {
+  color: #fff;
+  background: #5BC3D5;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  border-radius: 10%;
+}
 
 
-
-
-
-
-  footer {
-    width: 100%;
-    height: 80px;
-    background-color: #DDD;
-    border-top: 1px solid #dcdddf;
-    }
-    
-    .footer_inner {
-    width: 100%;
-    height: 100%;
-    padding: 25px 30px;
-    display: flex;
-    justify-content: space-between;
-    }
-    
-    .footer_logo {
-    width: 50px;
-    height: 50px;
-    }
-    
-    .footer_logo img{
-    height: 30px;
-    }
-    
-    .footer_mail img{
-    height: 30px;
-    }
-  
-
-
-   .menu {
-    position: fixed;
-    right: -200px;
-    width: 260px;
-    height: 100%;
-    top: 0;
-    z-index: 10;
-    text-align: left;
-  }
-  
-  .menu.menu-open {
-    right: 0;
-  }
-  
-  .menu-wrap {
-    position: absolute;
-    top: 0;
-    left: 60px;
-    background: #1a1a1a;
-    width: 200px;
-    height: 100%
-  }
-  
-  .menu h1.logo a {
-    font-family: Raleway, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    letter-spacing: .15em;
-    line-height: 40px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-top: 20px;
-  }
-  
-  .menu h1.logo a:hover {
-    color: #1abc9c;
-  }
-  
-  .menu img.logo {
-    margin: 20px 0;
-    max-width: 160px;
-  }
-  
-  .menu a {
-    margin-left: 20px;
-    color: gray;
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-  
-  .menu a:hover {
-    color: #fff;
-  }
-  
-  .menu a:active {
-    color: #fff;
-  }
-  
-  .menu a>i {
-    float: left;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-    width: 25px;
-    font-size: 14px;
-    line-height: 40px;
-    margin: 25px 2px;
-  }
-  
-  .menu-close {
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    font-size: 14px;
-    color: gray;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    top: 25px;
-    right: 5px;
-    -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -ms-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-  }
-  
-  .menu-close:hover {
-    color: #fff;
-    -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -ms-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-  }
-  
-  .menu, .body-push {
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-  }
-  
-  #menuToggle {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 11;
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    cursor: pointer;
-    background: rgba(0, 0, 0, .25);
-    -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -ms-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-  }
-  
-  #menuToggle:hover {
-    color: #fff;
-    background: rgba(0, 0, 0, .2);
-    -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -ms-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-  }
-  
-
-  .fa-bars {
-    position: absolute;
-    top: 12px;
-    right: 15px;
-  }
+.fa-bars {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
