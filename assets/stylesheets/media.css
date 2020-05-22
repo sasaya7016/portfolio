@@ -12,13 +12,14 @@
   .swiper-container {
     height: 300px;
     width: 100%;
-    display: flex;
-    top: 550px;
-    left: 45px;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    
   }
 
   .main_wrapper {
-    min-width: 480px;
+    min-width: 100%;
     height: 100%;
     top: 800px;
     left: 0;
@@ -75,9 +76,10 @@
 
   .tab-container {
     width: 100%;
-    min-width: 480px;
-    /* position: fixed; */
+    min-width: 0;
+    padding: 0 5px;
     top: 700px;
+    left: 0;
     
   }
 
@@ -87,17 +89,17 @@
   }
 
   .app-data {
-    justify-content: left;
+    display: grid;
   }
 
   .app-image img {
-    width: 100px;
-    height: 70px;
+    width: 100%;
+    height: 250px;
   }
 
   .app-text {
     width: 100%;
-    height: 70px;
+    height: 200px;
   }
   
   .app-data a {
@@ -128,4 +130,9 @@
     width: 100%;
     font-size: 5px;
   }
+
+  menu {
+   display: none;
+  }
+
 }
