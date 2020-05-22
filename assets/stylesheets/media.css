@@ -1,0 +1,130 @@
+@media screen and (max-width:480px) {  
+
+  header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute; 
+    z-index: 2;
+  }
+
+  .swiper-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    top: 550px;
+    left: 45px;
+  }
+
+  .main_wrapper {
+    min-width: 480px;
+    height: 100%;
+    top: 800px;
+    left: 0;
+    overflow: scroll;
+    position: relative;
+  }
+
+
+
+  .main-board {
+    width: 0%;
+    margin-top: 15px;
+  }
+
+  .main-board p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0px;
+    line-height: 20px;
+  }
+  hr.style2 {
+    margin-top: 3px;
+    border-top: 1px #5BC3D5;
+    width: 98%;
+    text-align: center;
+  }
+
+  hr.style3 {
+    margin-top: 0;
+    border-top: 0;
+    width: 0;
+    text-align: center;
+  }
+  
+  .main-board-contents {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+
+  .main-board-image {
+    width: 0px;
+    height: 0px;
+  }
+  
+  .main-board-image img{
+    width: 150px;
+    height: 100px;
+  }
+
+
+  .tab-container {
+    width: 100%;
+    min-width: 480px;
+    /* position: fixed; */
+    top: 700px;
+    
+  }
+
+  .development {
+    width: 100%;
+    margin: 0;
+  }
+
+  .app-data {
+    justify-content: left;
+  }
+
+  .app-image img {
+    width: 100px;
+    height: 70px;
+  }
+
+  .app-text {
+    width: 100%;
+    height: 70px;
+  }
+  
+  .app-data a {
+    color: #111821;
+    font-size: 8px;
+  }
+
+  .app-data p {
+    color: #111821;
+    font-size: 7px;
+  }
+
+  h4 a {
+    font-size: 10px;
+  }
+ 
+  .tab-profile-top {
+    display: grid;
+    justify-content: center;
+  }
+
+  .tab-profile-left {
+    width: 100%;
+    font-size: 5px;
+  }
+  
+  .tab-profile-right {
+    width: 100%;
+    font-size: 5px;
+  }
+}

@@ -149,7 +149,7 @@ hr.style1 {
   height: 300px;
   width: 100%;
   display: flex;
-  top: 520px;
+  top: 550px;
   left: 5px;
 }
 
@@ -227,7 +227,6 @@ hr.style3 {
 
 .main-board-contents {
   display: flex;
-  justify-content: ;
   padding: 0 40px;
 }
 
@@ -236,7 +235,6 @@ hr.style3 {
   height: 120px;
   margin: 0 20px;
   background-color: #151e29;
-  /* position: relative; */
 }
 
 span.board-tag {
