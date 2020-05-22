@@ -1,12 +1,18 @@
 @media screen and (max-width:480px) {  
+  body {
+   position: relative;
+   overflow: scroll;
+  }
 
   header {
     width: 100%;
+    height: 680px;
     top: 0;
     left: 0;
     right: 0;
     position: absolute; 
     z-index: 2;
+    
   }
 
   .swiper-container {
@@ -21,10 +27,11 @@
   .main_wrapper {
     min-width: 100%;
     height: 100%;
-    top: 800px;
+    top: 680px;
     left: 0;
-    /* overflow: scroll; */
-    position: relative;
+    overflow: 0;
+    position: absolute;
+    z-index: 2;
   }
 
 
@@ -78,8 +85,8 @@
     width: 100%;
     min-width: 0;
     padding: 0 5px;
-    position: fixed;
-    top: 700px;
+    position: absolute;
+    top: 0px;
     left: 0;
     
   }
