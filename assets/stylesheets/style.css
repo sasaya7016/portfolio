@@ -227,6 +227,7 @@ hr.style3 {
 
 .main-board-contents {
   display: flex;
+  justify-content: space-between;
   padding: 0 40px;
 }
 
