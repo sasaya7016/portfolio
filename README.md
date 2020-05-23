@@ -8,8 +8,6 @@
 * 言語:  HTML CSS Javascript jQuery
 * FW:  github
 
-
-
 ## Hash Literal
 * 言語:  Haml/SCSS/Javascript,Ruby/SQL
 * FW:  Ruby on Rails
