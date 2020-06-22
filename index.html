@@ -148,7 +148,8 @@
       <!--メインタブ-->
       <div class="tab-container">
         <ul class="tab-menu">
-          <li><a href="#" class="active" data-id="service">App</a></li>
+          <li><a href="#" class="active" data-id="service">App-1</a></li>
+          <li><a href="#" data-id="practice">App-2</a></li>
           <li><a href="#" data-id="about">Profile</a></li>
           <!-- <li><a href="#" data-id="contact">contact</a></li> -->
         </ul>
@@ -160,9 +161,43 @@
             <div class="development_title">
               <h3><i class="fas fa-desktop"></i>&nbsp;開発アプリ一覧</h3>
             </div> 
+
             <!-- アプリ一覧ページ (li data 複製) -->
             <ul class="app-lists">
+
               <!-- 個人アプリ① -->
+              <li class="app-data">
+                <div class="app-image"><a href="#">
+                  <img src="assets/images/connect.png" alt=""></a> 
+                </div>
+                <div class="app-text">
+                  <h4><a href="http://54.199.91.63/">Conect（SNSアプリ）</a></h4>
+                  <span class="create_date">2020/06/20</span>
+                  <span class="create_tag"> Ruby on rails</span><br>
+                  <p class="link-url">IP：<a href="http://54.199.91.63/">http://54.199.91.63/</a><br>
+                  <br>Connect( SNSアプリ）<br>
+                  Github&nbsp;:&nbsp;<a href="https://github.com/sasaya7016/connect">Connect(READ.md)</a><br>
+                  <br>-----主な機能-----
+                  <br>Device:ユーザー登録、ログイン、ログアウト
+                  <br>TWEET(投稿)機能 : 投稿、詳細、編集、削除
+                  <br>Comment(コメント)機能 : 投稿、削除
+                  <br>like(コメント)機能 : いいね ON/OFF
+                  <br>Chat(チャット)機能 : グループ作成、グループメッセージ
+                  <br>User(マイページ)機能 : プロフィール作成(画像設定)、他ユーザーのプロフィール詳細確認
+                  <br>Follor(フォロー)機能 : フォローした方のツイート閲覧
+                  <br>全ツイート閲覧、検索
+
+                  <br>-----追加実装-----
+                  <br>ユーザー検索、全ユーザー閲覧、
+                  <br>チャット機能の相互フォローのグループメンバーのみ使用可能
+                  <br>各いいね機能、フォロー機能の非同期通信など
+                  <br>修正：リファクタリング
+
+                  <br><br>
+                </p>
+                </div>
+              </li> 
+
               <li class="app-data">
                 <div class="app-image"><a href="#">
                   <img src="assets/images/C-tool.jpg" alt=""></a>
@@ -173,36 +208,17 @@
                   <span class="create_tag"> Laravel</span><br>
                   <p class="link-url">URL：<a href="#">#</a><br>
                     <!-- https://varenta.herokuapp.com -->
-                    <br>独学でPHP勉強中で、BLOGアプリ作成しております。
-                    <br>フレームワークはLaravelを使用しておりまして、現在マークアップのみ作成中です。
+                    <br>独学でPHP勉強中。BLOGアプリ作成しております。
+                    <br>フレームワークはLaravelを使用しております。
                     <br>Github&nbsp;:&nbsp;<a href="https://github.com/sasaya7016/C-tool">C-tool(READ.md)</a><br>
                     
-                    <br>今後搭載予定：投稿機能、詳細、編集、削除
+                    <br>投稿機能、詳細、編集、削除作成、メインTOPマークアップ作成
+                    <br>現在デプロイの調整中です。
                     <br>
                   </p>
                 </div>
               </li> 
 
-              <li class="app-data">
-                <div class="app-image"><a href="#">
-                  <img src="assets/images/varenta.jpg" alt=""></a>
-                </div>
-                <div class="app-text">
-                  <h4><a href="#"">Varenta</a></h4>
-                  <span class="create_date">作成中</span>
-                  <span class="create_tag"> Ruby on rails</span><br>
-                  <p class="link-url">URL：<a href="#">#</a><br>
-                    <!-- https://varenta.herokuapp.com -->
-                    <br>美容院HPをイメージして作成中です。大枠を途中までデプロイしてます。
-                    <br>技術的には未熟ですが、より修正や機能のカスタマイズを行っていきます。
-                    <br>Github&nbsp;:&nbsp;<a href="https://github.com/sasaya7016/varenta">Varenta(READ.md)</a><br>
-                    
-                    <br>主な機能：ユーザー登録、ログイン
-                    <br>今後搭載予定：商品購入機能、予約機能、API機能、ニュース投稿機能
-                    <br>
-                  </p>
-                </div>
-              </li> 
               
               <li class="app-data">
                 <div class="app-image"><a href="http://www.hash-literal.com">
@@ -213,7 +229,7 @@
                   <span class="create_date">2020/04/24</span>
                   <span class="create_tag"> Ruby on rails</span><br>
                   <p class="link-url">URL：<a href="http://www.hash-literal.com">http://www.hash-literal.com</a><br>
-                  <span class="app-pass"> user：teamd72,&nbsp;pass：teamd</span><br>
+                  <!-- <span class="app-pass"> user：teamd72,&nbsp;pass：teamd</span><br> -->
                   <br>プログラミングスクールでチームでアジャイル開発致しましたアプリでございます。フリマアプリです。<br>
                   Github&nbsp;:&nbsp;<a href="https://github.com/sasaya7016/freemarket_sample_72d">Hash-literal(READ.md)</a><br><br>
                   テスト用アカウント等<br>
@@ -233,32 +249,72 @@
                   </p> 
                 </div>
               </li> 
-                
-              <!-- TECHCAMP 個人開発 -->
-              <!-- <li class="app-data">
-                <div class="app-image"><a href="http://18.180.142.209/">
-                  <img src="assets/images/chatspace.png" alt=""></a> 
-                </div>
-                <div class="app-text">
-                  <h4><a href="http://18.180.142.209/">Chat-Space（チャットアプリケーション）</a></h4>
-                  <span class="create_date">2020/03/20</span>
-                  <span class="create_tag"> Ruby on rails</span><br>
-                  <p class="link-url">IP：<a href="http://18.180.142.209/">http://18.180.142.209/</a><br>
-                  <br>プログラミングスクールの課題で個人開発致しました。グループチャットのアプリです。<br>
-                  Github&nbsp;:&nbsp;<a href="https://github.com/sasaya7016/chat-space">chat-space(READ.md)</a><br>
-                  <br>-----主な機能-----
-                  <br>ユーザー登録、ログイン、ログアウト、グループ作成
-                  <br>非同期通信によるメッセージの自動更新
-                  <br><br>
-                </p>
-                </div>
-              </li>  -->
             </ul> <!--/app-lists-->
             <p>※アプリ随時追加してきます。</p>
           </div> <!--/development-->
         </section> <!--タブ①終わり-->
-        
+
+
+
         <!----------タブ②---------->
+        <section class="tab-content" id="practice">
+          <div class="development">
+            <div class="development_title">
+              <h3><i class="fas fa-desktop"></i>&nbsp;その他アプリ</h3>
+            </div> 
+
+            <!-- アプリ一覧ページ (li data 複製) -->
+            <ul class="app-lists">
+              <!-- ----- ----- 1 ----- ----- -->
+              <li class="app-data">
+                <div class="app-image"><a href="https://varenta.herokuapp.com/">
+                  <img src="assets/images/varenta.jpg" alt=""></a>
+                </div>
+                <div class="app-text">
+                  <h4><a href="#"">Varenta</a></h4>
+                  <span class="create_date">作成中</span>
+                  <span class="create_tag"> Ruby on rails</span><br>
+                  <!-- <p class="link-url">URL：<a href="https://varenta.herokuapp.com ">https://varenta.herokuapp.com/</a><br> -->
+                    <br>美容院HPをイメージして作成中です。
+                    <br>大まかなマークアップのみデプロイしてます。
+                    <br>Github&nbsp;:&nbsp;<a href="https://github.com/sasaya7016/varenta">Varenta(READ.md)</a><br>
+                    <br>
+                    <br>今後搭載予定：ユーザー登録、ログイン商品購入機能、予約機能など
+                    <br>
+                  </p>
+                </div>
+              </li> 
+              <!-- ----- ----- 2 ----- ----- -->
+              <li class="app-data">
+                <div class="app-image"><a href="#">
+                  <img src="assets/images/chatspace.png" alt=""></a> 
+                </div>
+                <div class="app-text">
+                  <h4><a href="#">Chat-space</a></h4>
+                  <span class="create_date">2020/03/20</span>
+                  <span class="create_tag"> Ruby on rails</span><br>
+                  <p class="link-url">IP：<a href="#">現在インスタンス止めております。</a><br>
+                  <br>プログラミングスクールで開発した個人アプリです<br>
+                  Github&nbsp;:&nbsp;<a href="https://github.com/sasaya7016/chat-space">chat-space(READ.md)</a><br>
+
+                  <br>-----主な機能-----
+                  <br>ユーザー登録、ログイン、ログアウト、グループ作成、チャット機能
+                  <br>Ajax非同期通信によるメッセージの自動更新が可能です。
+                  <br><br>
+                </p>
+                </div>
+              </li> 
+
+            </ul> <!--/app-lists-->
+            <p>※アプリ随時追加してきます。</p>
+          </div> <!--/development-->
+        </section> <!--タブ①終わり-->
+
+
+
+
+        
+        <!----------タブ③---------->
         <section class="tab-content" id="about">
           <div class="tab-profile">
             <h3><i class="fas fa-user-tie"></i>Profile</h3>
