@@ -6,6 +6,5 @@
 ## Portfolioに使用した技術
 * 言語:  HTML CSS Javascript jQuery
 * FW:  github
-* 画像slide,
 
 
